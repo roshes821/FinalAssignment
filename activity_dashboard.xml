@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_gravity="center_horizontal"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingStart="48dp"
+        android:paddingEnd="48dp" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/left_arrow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/circular_button"
+            android:contentDescription="@string/left_arrow"
+            android:elevation="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/left_arrow" />
+
+        <ImageButton
+            android:id="@+id/right_arrow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/circular_button"
+            android:contentDescription="@string/right_arrow"
+            android:elevation="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+</LinearLayout>
